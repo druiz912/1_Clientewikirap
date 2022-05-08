@@ -1,0 +1,21 @@
+#principal {
+    width: 100%;
+}
+#formulario {
+    width: 800px;
+    margin: auto;
+}
+mat-form-field {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+#titulo{
+    font-family:fantasy ;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

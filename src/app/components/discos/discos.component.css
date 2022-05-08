@@ -1,0 +1,19 @@
+.flex-wrap {
+    float: left;
+    overflow-y: hidden;
+    height: auto;
+    padding-bottom:2px ;
+    /* 664px; */
+}
+.imagen-disco {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+img {
+ max-height: 355px; 
+}
+
+.pl {
+    height: 195px;
+}

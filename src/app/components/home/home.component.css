@@ -1,0 +1,269 @@
+
+
+nav {
+    text-align: center;
+}
+
+
+.container {
+    width: 1000px;
+    height: auto;
+    margin: 30px auto;
+}
+
+/* contenedor del bucle de imágenes */
+header {
+    width: 1000px;
+    height: 300px;
+    border: 5px solid lightgrey;
+}
+
+header:hover {
+    transform: scale(0.6);
+    height: 500px;
+    border: 5px double black;
+}
+
+/*  */
+/* bucle de imágenes */
+.img0 {
+    background: url('https://www.yaconic.com/wp-content/uploads/2016/03/wu-tang-clan-1993-1024x679.jpg');
+    transition: transform 1.5s;
+    max-width: 1000px;
+    max-height: 500px;
+
+}
+
+.img1 {
+    background: url('https://www.grunge.com/img/gallery/54-of-people-agree-that-this-was-the-best-hip-hop-artist-of-the-90s/intro-1605733963.jpg');
+    transition: transform 1.5s;
+    max-width: 1000px;
+    max-height: 500px;
+    padding: 100px;
+}
+
+.img2 {
+    background: url('https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/a-tribe-called-quest-4-4-1990.jpg');
+    transition: transform 1.5s;
+    width: auto;
+    max-height: 500px;
+    padding: 100px;
+}
+
+.img3 {
+    background: url('https://i.pinimg.com/originals/6b/38/65/6b3865a46020a4b89e6dfde6f035f02a.jpg');
+    transition: transform 1.5s;
+    width: auto;
+    max-height: 500px;
+}
+
+/*  */
+
+
+
+.container h1 span {
+    font-size: 3em;
+    color: #000;
+    text-shadow: #893cc7 -6px 6px 11px;
+}
+
+#mov:hover {
+    font-style: italic;
+}
+
+span:hover {
+    letter-spacing: 7px;
+    transition: 1.5s;
+}
+
+.listado-artistas {
+    margin-bottom: 2px;
+
+}
+
+.lista {
+    text-align: center;
+    display: grid;
+}
+
+.bt-ev {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+}
+
+#bt0:hover {
+    background-color: #008CBA;
+    color: white;
+}
+#img-inicio {
+    border: 1px black solid;
+}
+
+#listado {
+    margin: 1px 1px 1px 200px;
+}
+
+/* prim */
+.tk-container2 {
+    max-width: 650px;
+    width: calc(100% - 2rem);
+    margin-left: 30rem;
+    margin-right: 1rem;
+}
+
+.tk-grid {
+    display: grid;
+    gap: 1, 5rem;
+}
+
+#estimulacionmental_img {
+    border-image: space;
+}
+
+.estimulacion_data {
+    text-align: center;
+    width: 100%;
+}
+.estimulacionmental_data{
+    width: 100%;
+}
+
+.estimulacionmental_description {
+    width: 95%;
+}
+
+.estimulacionmental_data,
+.estimulacionmental_initial,
+.estimulacion_description
+{
+text-align: center;
+margin-inline-start: 25px;
+}
+
+.estimulacionmental_description {
+    margin-bottom: 1.5rem;
+    margin: 5px;
+}
+
+#estimulacionmental_img {
+    animation-name: animar;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animar {
+    0% {
+        transform: scale(00.3s);
+        border-radius: 90%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .tk-container2,
+    .tk-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tk-container2 .estimulacionmental_container {
+        column-gap: 7rem;
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #473e3e;
+    margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    color: #b0c4de;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+    .estimulacionmental_container,
+    .tk-container2 {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+    .estimulacionmental_data,
+    .estimulacionmental_initial,
+    .estimulacion_description,
+    .container_container,
+    .contact_initial {
+      text-align: center;
+      margin-inline-start: 25px;
+    }
+  
+    #estimulacionmental_img {
+      width: 350px;
+      order: -1;
+      border-radius: 75px;
+    }
+  
+    .contact_button {
+      justify-self: auto;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      margin: 0;
+    }
+    .section {
+      padding-top: 8rem;
+    }
+    .nav {
+      height: calc(3rem + 1.5rem);
+    }
+    .nav_menu {
+      display: block;
+    }
+    .nav_list {
+      display: flex;
+    }
+    .nav_item {
+      margin-left: 2.5rem;
+      margin-bottom: 0;
+    }
+    .nav_toggle {
+      display: none;
+    }
+    /* ESTO ES CLAVE PARA LA POSICION DE COLUMNAS*/
+  
+    .tk-grid {
+      display: grid;
+      gap: 1, 5rem;
+      justify-content: space-around;
+    }
+  
+    /* FIN */
+  
+    @media screen and (min-width: 960px) {
+      .tk-container2,
+      .tk-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .tk-container2 .estimulacionmental_container {
+        column-gap: 7rem;
+      }
+    }
+  }
+
+/*  */

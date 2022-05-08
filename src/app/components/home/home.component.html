@@ -1,0 +1,96 @@
+<body>
+
+    <div class="container">
+        <header [ngClass]="{
+            img0:(imgSel === '0') , img1: (imgSel === '1'), 
+            img2: (imgSel === '2') , img3: (imgSel === '3')}">
+        </header>
+    </div>
+
+
+    <main>
+        <section class="estimulacionmental section tk-container" id="estimulacionmental">
+            <div class="estimulacionmental_container tk_container tk-grid">
+                <div class="estimulacionmental_data">
+                    <span class="section-subtitle estimulacionmental_initial"> HIP-HOP</span>
+                    <h2 class="section-title estimulacionmental_initial">STATE OF <br>MIND</h2>
+                    <p class="estimulacionmental_description">
+                        <strong style="display: grid;padding: 8px;">¿QUÉ ES EL HIP-HOP?</strong>
+                        El hip hop​ es una cultura originada en el sur del Bronx y Harlem, en la ciudad de
+                        Nueva York por Afroamericanos y Latinoamericanos durante la década de 1960. Consta de cuatro
+                        principales
+                        elementos: MC, DJ, BREAK, GRAFFITTI.
+                        <strong style="display: grid;padding: 8px;">DJ & MC</strong>
+                        Para entusiasmar a la multitud en estas fiestas de barrio, los DJs iban acompañados por
+                        un Maestro de Ceremonias, también conocido como MC. Su papel era presentar a los DJs, entretener
+                        a la
+                        multitud,hablando o haciendo rimas al público, ofreciendo voces habladas sobre la música.
+                        A finales de los 70, las discográficas como «Sugar Hill» comenzaron a ganar dinero con la
+                        creciente tendencia
+                        de DJ y MC. Algunos de los primeros discos de música rap fueron grabados por grupos de música
+                        disco
+                        tocando en directo y un MC rapeando sobre la música.
+                    </p>
+                    <p class="estimulacionmental_description">
+                        <strong style="display: grid;padding: 8px;">¿DONDE NACIÓ EL HIP-HOP?</strong> 
+                        <span>Pues en una fiesta!</span> El<span>11 agosto de 1973</span>,
+                        una fiesta callejera en el número <span>1520 de
+                            Sedgwick Avenue</span>, en el Bronx de Nueva York Kool Herc creó el sonido ‘break’ porque es
+                        el tramo
+                        de la canción donde rompe con la selección rítmica haciendo girar
+                        dos discos idénticos en la mesa de mezclas que manipulaba. Lo que conseguía erar alargar la
+                        parte instrumental de las canciones a la vez que introducía sonidos rayados que lograban nuevos
+                        y desconocidos ritmos a la música disco de la época, aunque esa mezcla de rock, pop, disco, jazz
+                        y blues tardaría aún años en ser conocido con el nombre de hip hop.
+                        Por si fuera poco, la revolución musical fue completa cuando un amigo de
+                        <span>Herc</span>,<span>Coke La Rock</span> ,
+                        cogió un micrófono y comenzó a rapear ya que ni siquiera existía esa palabra.
+                        Entonces sí que se puede decir que había nacido el hip hop.
+                    </p>
+                </div>
+                <div class="estimulacion_data">
+                    <img src="https://www.yaconic.com/wp-content/uploads/2016/01/hip-hop-2-706x1024.jpg"
+                        id="estimulacionmental_img" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <div class="lista">
+
+        <div class="listado-artistas" id="listArt">
+            <div class="mejoresdiscos">
+                <h3>LISTADO DE ARTISTAS</h3>
+            </div>
+            <div id="listado">
+                <div *ngFor="let artista of artistas | slice:0:3">
+                    <app-artistas [artistas]="artista"></app-artistas>
+                </div>
+
+            </div>
+        </div>
+        <button class="bt-ev" id="bt0" routerLink="/artistas">Ver todos los artistas</button>
+
+        <div id="lista-discos">
+            <div class="mejoresdiscos">
+                <h3>LOS MEJORES DISCOS</h3>
+            </div>
+            <div id="listado">
+                <div *ngFor="let discos of discos | slice:0:3">
+                    <app-discos [discos]="discos"></app-discos>
+                </div>
+            </div>
+        </div>
+        <button class="bt-ev" id="bt0" routerLink="/discos">Ver todos los discos</button>
+
+    </div>
+
+
+
+
+
+</body>

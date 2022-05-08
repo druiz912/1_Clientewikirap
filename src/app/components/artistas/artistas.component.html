@@ -1,0 +1,16 @@
+<div class="card flex-wrap" style="width: 20rem;">
+
+    <div class="imagen-artista">
+        <img class="card-img-top" [src]="artistas.imagen" alt="Foto del artista" 
+        width="960" height="640">
+    </div>
+
+    <div class="card-body pl">
+        <h5 class="card-title">{{artistas.nombreartistico}}</h5>
+        <p class="card-text"><strong>Lugar de nacimiento: </strong>{{artistas.nacionalidad}}</p>
+        <p class="card-text"><strong>Edad: </strong>{{artistas.edad}}</p>
+        <!-- <a routerLink="detalles" class="btn btn-primary">Ver más</a> -->
+    </div>
+</div>
+
+<router-outlet></router-outlet>

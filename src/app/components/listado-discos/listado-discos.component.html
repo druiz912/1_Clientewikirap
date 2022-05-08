@@ -1,0 +1,26 @@
+<form class="form-inline formulario">
+    <input class="form-control mr-sm-2" [(ngModel)]="filtroBusqueda" name="filtroBusqueda" type="search" placeholder="Busca un disco" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
+
+<div id="listado">
+    <div class="bt-ini">
+        <button routerLink="/inicio">Atrás</button>
+    </div>
+    <!--  -->
+    <div *ngFor="let discos of discos | filterDiscos: filtroBusqueda"> 
+        <app-discos [discos]="discos"></app-discos>
+    </div>
+
+</div>
+
+
+
+<!-- <div *ngIf="(pelicula)">
+    {{pelicula.titulo}}<button (click)="limpiar()">Cerrar</button>
+</div>
+
+poner en el ts:
+
+
+-->

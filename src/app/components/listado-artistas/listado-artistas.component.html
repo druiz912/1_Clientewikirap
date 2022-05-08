@@ -1,0 +1,13 @@
+<form class="form-inline formulario">
+    <input class="form-control mr-sm-2" [(ngModel)]="filtroBusqueda" name="filtroBusqueda" (input)="buscar()" type="search" placeholder="Buscar artista" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
+
+<div id="listado">
+    <div class="bt-ini">
+        <button routerLink="/inicio">Atrás</button>
+    </div>
+    <div *ngFor="let artista of artistas | filterArtistas: filtroBusqueda">
+        <app-artistas [artistas]="artista"></app-artistas>
+    </div>
+</div>

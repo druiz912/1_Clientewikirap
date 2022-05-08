@@ -1,0 +1,18 @@
+.flex-wrap {
+    float: left;
+    overflow-y: hidden;
+    height: auto;
+    /* 664px; */
+}
+.imagen-artista {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+img {
+ max-height: 355px; 
+}
+
+.pl {
+    height: 195px;
+}
